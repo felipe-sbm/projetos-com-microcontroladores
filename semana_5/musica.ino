@@ -12,6 +12,8 @@
 
 
     Obrigado aos meus amigo Davi e Fernando que me acompanharam no desenvolvimento.
+
+    Link do projeto do wokwi: https://wokwi.com/projects/475134280146787329
 **/
 
 #define NOTA_C4  262

@@ -1,6 +1,18 @@
-/**
-  FÜR ELISE - BEETHOVEN
-
+/*
+ * ============================================================================
+ *  Project      : Für Elise — Beethoven, for Arduino
+ *  File         : musica.ino
+ *  Professor    : Marcelo Borges Nogueira
+ *  Author       : Felipe SBM
+ *  Coauthors    : Davi & Fernando
+ *  Created      : 13 September 2026
+ *  Description  : Plays the "Für Elise" piece by Beethoven on an Arduino.
+ *
+ *  Copyright (c) 2026 Felipe Samuel.
+ *  All rights reserved.
+ * ============================================================================
+ *
+ * Developer Notes:
     Feita na aula de Projetos com Microcontroladores;
     Local: Escola de Ciências & Tecnologia;
     Lecionada por:  Marcelo Borges Nogueira;
@@ -10,9 +22,7 @@
                 me deu uma grande nostalgia quando estava desenvolvendo
                 (esse relógio era da revista da AVON).
 
-
     Obrigado aos meus amigo Davi e Fernando que me acompanharam no desenvolvimento.
-
     Link do projeto do wokwi: https://wokwi.com/projects/475134280146787329
 **/
 

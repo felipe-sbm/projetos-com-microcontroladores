@@ -60,10 +60,13 @@ void WebServerManager::handleGesture()
         server.send(400, "text/plain", "parametro 'name' ausente");
         return;
     }
+
     String name = server.arg("name");
     bool ok = gestures.perform(name);
+
     if (ok)
     {
+        Serial.println("Gesto ACIONADO!!!");
         server.send(200, "text/plain", "ok");
     }
     else

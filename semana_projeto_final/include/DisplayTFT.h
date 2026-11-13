@@ -30,7 +30,18 @@ public:
      * @param url Endereço de acesso ao servidor web.
      */
     void showWifiQR(const char* ssid, const char* password, const char* url);
+    void update();
 
 private:
     TFT_eSPI tft;
+    unsigned long lastSwitch = 0;
+    uint8_t screenState = 0; // 0: wifi, 1: url, 2: background
+    char ssidBuf[64];
+    char passBuf[64];
+    char urlBuf[128];
+
+    void drawQR();
+    void showWifiScreen();
+    void showUrlScreen();
+    void showBackground();
 };

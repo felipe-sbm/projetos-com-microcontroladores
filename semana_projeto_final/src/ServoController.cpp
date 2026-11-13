@@ -46,6 +46,8 @@ void ServoController::begin()
  */
 void ServoController::setPose(int polegar, int indicador, int medio, int anelar, int mindinho, int pulso)
 {
+
+    Serial.println("Gesto ACIONADO via servidor!!!");
     servoPolegar.write(polegar);
     servoIndicador.write(indicador);
     servoMedio.write(medio);

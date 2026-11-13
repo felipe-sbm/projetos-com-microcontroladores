@@ -32,6 +32,7 @@ void setup()
 {
     Serial.begin(115200);
     delay(1000);
+    randomSeed(analogRead(34));
 
     servoController.begin();
     wifiAP.begin();
@@ -51,4 +52,16 @@ void setup()
 void loop()
 {
     webServer.handleClient();
+    display.update();
+
+    // Modo de teste: executa gestos aleatorios para validar os servos.
+    static unsigned long lastGesture = 0;
+    if (millis() - lastGesture > 1500) {
+        lastGesture = millis();
+        const char* lista[] = {"close", "open", "rock", "loose", "peace", "thumbs", "l", "wave"};
+        int idx = random(0, 8);
+        gestures.perform(lista[idx]);
+        Serial.print("Gesto teste: ");
+        Serial.println(lista[idx]);
+    }
 }

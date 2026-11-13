@@ -14,7 +14,7 @@
 #include "WiFiAP.h"
 
 const char *WiFiAP::SSID = "Power Ranger Rosa — IoT";
-const char *WiFiAP::PASSWORD = "Deus_é_fiel_2026";
+const char *WiFiAP::PASSWORD = "88888888";
 
 /**
  * @brief Inicializa o ponto de acesso Wi-Fi.
